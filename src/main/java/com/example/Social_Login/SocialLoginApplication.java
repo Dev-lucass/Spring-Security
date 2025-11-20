@@ -1,0 +1,24 @@
+package com.example.Social_Login;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+@Slf4j
+public class SocialLoginApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SocialLoginApplication.class, args);
+    }
+
+    @Bean
+    public CommandLineRunner runner() {
+        return args -> {
+            log.info("ACCESS -> http://localhost:8080/login");
+        };
+    }
+
+}

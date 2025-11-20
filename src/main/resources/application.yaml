@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Social-Login
+
+  #Social Login With Google
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+
